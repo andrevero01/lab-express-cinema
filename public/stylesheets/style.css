@@ -1,8 +1,108 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+img {
+  box-shadow: 0 0 10px #000;
+}
+
+nav {
+  background-color: #00b7ff;
+}
+
+nav h2 {
+  color: #fff;
+  font-size: 30px;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+/* HOME PAGE */
+
+.home-bg {
+  background: url(/images/cinema.jpg);
+  background-size: cover;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-end;
+  margin: 100px 100px 0 0;
+}
+
+.home-title {
+  font-size: 90px;
+  color: #fff;
+  text-align: center;
+}
+
+.check-more-btn {
+  text-align: center;
+  width: 10em;
+  padding: 10px;
+  border: none;
+  border-radius: 30px;
+  background-color: #fff;
+  color: #018fc7ad;
+  box-shadow: 0 0 5px #252525;
+  text-decoration: none;
+}
+
+/* MOVIES */
+
+.movies-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  width: 90%;
+  margin: 60px auto;
+}
+
+.movie {
+  text-align: center;
+  align-self: center;
+}
+
+.movies-p {
+  margin-left: 20px;
+}
+
+/* MOVIE INFO */
+
+.movie-info-page {
+  display: flex;
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.movie-info-container {
+  width: 50%;
+}
+
+.description {
+  margin: 40px 0;
+}
+
+.showtimes {
+  margin-bottom: 40px;
+}
+
+.showtimes span {
+  border-right: 1.5px solid #000;
+  padding-right: 6px;
 }
